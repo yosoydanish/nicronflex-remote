@@ -257,6 +257,7 @@ webrtc-sctp = { git = "https://github.com/rustdesk-org/webrtc", rev = "49c89bd8d
 
 [package.metadata.winres]
 LegalCopyright = "Nicronflex. Based on RustDesk (AGPL-3.0), Copyright © 2026 Purslane Tech Pte. Ltd."
+CompanyName = "Nicronflex"
 ProductName = "Nicronflex Remote"
 FileDescription = "Nicronflex Remote"
 OriginalFilename = "rustdesk.exe"

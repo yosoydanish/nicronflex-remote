@@ -23,6 +23,12 @@ REPLACEMENTS = [
      f'pub const RENDEZVOUS_SERVERS: &[&str] = &["{SERVER}"];'),
     ('pub const RS_PUB_KEY: &str = "OeVuKk5nlHiXp+APNn0Y3pC1Iwpwn44JGqrQCsWqmBw=";',
      f'pub const RS_PUB_KEY: &str = "{KEY}";'),
+    # Padroes de fabrica (valem ate o usuario mudar nas configuracoes)
+    ('pub static ref DEFAULT_SETTINGS: RwLock<HashMap<String, String>> = Default::default();',
+     'pub static ref DEFAULT_SETTINGS: RwLock<HashMap<String, String>> = RwLock::new(HashMap::from([\n'
+     '        ("verification-method".to_owned(), "use-both-passwords".to_owned()),\n'
+     '        ("temporary-password-length".to_owned(), "8".to_owned()),\n'
+     '    ]));'),
 ]
 
 

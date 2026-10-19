@@ -28,6 +28,7 @@ native-windows-gui = {version = "1.0", default-features = false, features = ["an
 
 [package.metadata.winres]
 LegalCopyright = "Nicronflex. Based on RustDesk (AGPL-3.0), Copyright © 2026 Purslane Tech Pte. Ltd."
+CompanyName = "Nicronflex"
 ProductName = "Nicronflex Remote"
 OriginalFilename = "NicronflexRemote.exe"
 FileDescription = "Nicronflex Remote"
